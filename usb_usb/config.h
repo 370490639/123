@@ -33,6 +33,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 16
 #define MATRIX_COLS 16
 
+#define SUART_OUT_PORT  PORTF   //TX
+#define SUART_OUT_BIT   4
+#define SUART_IN_PIN    PINF  //RX
+#define SUART_IN_BIT    7
+
 /* key combination for command */
 #define IS_COMMAND() (keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT))) 
 
